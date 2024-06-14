@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitocises</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="logo">Monitocises</div>
+        <input type="checkbox" id="toggle" class="toggle">
+        <label for="toggle" class="toggle-btn">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Exercises</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+</header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Next-Generation Exercise Counter</h1>
+            <p>Revolutionize the way you track and complete your workouts with our innovative exercise counter. Experience an intelligent, intuitive, and efficient fitness journey.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn">About Us</a>
+                <a href="#" class="btn btn-primary">Explore Exercises <span>&rarr;</span></a>
+            </div>
+        </div>
+    </section>
+    <section class="exercises-heading">
+      <h2>Exercises</h2>
+  </section>
+    <section class="exercises">
+      <div class="exercise-card" id="card1">
+        <div class="exercise-content"><h3>SQUATS</h3>
+          <button class="start-exercise-btn" onclick="showOptions('card1')">Start The Exercise <span>&rarr;</span></button>
+        </div>
+        <div class="exercise-overlay hidden">
+          <h3>Set Exercise Duration</h3>
+          <div class="time-options">
+            <input type="number" class="minutes-input" id="minutes-input" min="0" max="5" placeholder="0 min">
+            <input type="number" class="seconds-input" id="seconds-input" min="0" max="59" placeholder="20 sec">
+          </div>
+          <h3>Set Repetitions</h3>
+          <div class="repetition-options">
+            <input type="number" class="sets-input" id="sets-input" min="1" placeholder="3">
+            <input type="number"class="reps-input" id="reps-input" min="1" placeholder="30">
+          </div><br>
+          <button class="btn btn-primary onclick="startExercise('card1')">Start</button>
+        </div>
+      </div>
+      <div class="exercise-card" id="card2">
+        <div class="exercise-content"><h3>JUMPING JACKS</h3>
+          <button class="start-exercise-btn" onclick="showOptions('card2')">Start The Exercise <span>&rarr;</span></button></div>
+          <div class="exercise-overlay hidden">
+            <h3>Set Exercise Duration</h3>
+            <div class="time-options">
+              <input type="number" class="minutes-input" id="minutes-input" min="0" max="5" placeholder="0 min">
+              <input type="number" class="seconds-input" id="seconds-input" min="0" max="59" placeholder="20 sec">
+            </div>
+            <h3>Set Repetitions</h3>
+            <div class="repetition-options">
+              <input type="number" class="sets-input" id="sets-input" min="1" placeholder="3">
+              <input type="number"class="reps-input" id="reps-input" min="1" placeholder="30">
+            </div><br>
+            <button class="btn btn-primary onclick="startExercise('card2')">Start</button>
+          </div>      
+        </div>
+      <div class="exercise-card" id="card3">
+        <div class="exercise-content"><h3>PUSH UPS</h3>
+          <button class="start-exercise-btn" onclick="showOptions('card3')">Start The Exercise <span>&rarr;</span></button></div>
+          <div class="exercise-overlay hidden">
+            <h3>Set Exercise Duration</h3>
+            <div class="time-options">
+              <input type="number" class="minutes-input" id="minutes-input" min="0" max="5" placeholder="0 min">
+              <input type="number" class="seconds-input" id="seconds-input" min="0" max="59" placeholder="20 sec">
+            </div>
+            <h3>Set Repetitions</h3>
+            <div class="repetition-options">
+              <input type="number" class="sets-input" id="sets-input" min="1" placeholder="3">
+              <input type="number"class="reps-input" id="reps-input" min="1" placeholder="30">
+            </div><br>
+            <button class="btn btn-primary onclick="startExercise('card3')">Start</button>
+          </div>        </div>
+      <div class="exercise-card" id="card4">
+        <div class="exercise-content"><h3>LUNGES</h3>
+          <button class="start-exercise-btn" onclick="showOptions('card4')">Start The Exercise <span>&rarr;</span></button></div>  
+          <div class="exercise-overlay hidden">
+            <h3>Set Exercise Duration</h3>
+            <div class="time-options">
+              <input type="number" class="minutes-input" id="minutes-input" min="0" max="5" placeholder="0 min">
+              <input type="number" class="seconds-input" id="seconds-input" min="0" max="59" placeholder="20 sec">
+            </div>
+            <h3>Set Repetitions</h3>
+            <div class="repetition-options">
+              <input type="number" class="sets-input" id="sets-input" min="1" placeholder="3">
+              <input type="number"class="reps-input" id="reps-input" min="1" placeholder="30">
+            </div><br>
+            <button class="btn btn-primary onclick="startExercise('card4')">Start</button>
+          </div>      </div>
+      </section>
+      
+      <section class="about-us">
+        <div class="about-content">
+            <div class="text-content">
+                <h2>About Site</h2>
+                <p>The state-of-the-art exercise counter uses advanced computer vision to seamlessly integrate with your fitness routine. With our smart tracking solutions, we bring the power of artificial intelligence to help you achieve your fitness goals effortlessly and accurately. Transform your workout experience into a precise, engaging, and motivating activity.</p>
+            </div>
+            <div class="image-content">
+                <img src="./assest/ai.png" alt="About Us Image">
+            </div>
+        </div>
+    </section>
+    
+  </section>
+  <section class="suggestions">
+    <div class="suggestions-content">
+        <p>Send us an email regarding any suggestion you may have.</p>
+        <form action="#">
+            <input type="text" placeholder="Enter your suggestion">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>Monitocises</h3>
+            <p>Making Your Daily Exercises Handy.</p>
+            
+        </div>
+        <div class="footer-right">
+            <div class="footer-column">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="script1.js"></script> 
+</body>
+</html>
